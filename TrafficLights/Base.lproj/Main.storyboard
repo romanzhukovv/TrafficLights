@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,55 +13,61 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-vR-CRd">
-                                <rect key="frame" x="150" y="84" width="114.5" height="608"/>
+                            <stackView opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-vR-CRd">
+                                <rect key="frame" x="331" y="40" width="362" height="1126"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSi-2f-uvd">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="114.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="362"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SSi-2f-uvd" secondAttribute="height" multiplier="1:1" id="ASo-mT-HZU"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsI-3e-CbC">
-                                        <rect key="frame" x="0.0" y="164.5" width="114.5" height="114.5"/>
+                                        <rect key="frame" x="0.0" y="382" width="362" height="362"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WsI-3e-CbC" secondAttribute="height" multiplier="1:1" id="wed-s2-1O4"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-gU-1wG">
-                                        <rect key="frame" x="0.0" y="329" width="114.5" height="114.5"/>
+                                        <rect key="frame" x="0.0" y="764" width="362" height="362"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lPE-gU-1wG" secondAttribute="height" multiplier="1:1" id="elY-WQ-aW1"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx5-Xc-Slc">
-                                        <rect key="frame" x="0.0" y="493.5" width="114.5" height="114.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="START">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx5-Xc-Slc">
+                                <rect key="frame" x="100" y="1236" width="824" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="clv-Tr-go2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="START">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.22095530984935366" green="0.25972530797644811" blue="0.35718845228010399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="mx5-Xc-Slc" firstAttribute="top" secondItem="4JD-vR-CRd" secondAttribute="bottom" constant="70" id="4bm-lQ-9NU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mx5-Xc-Slc" secondAttribute="bottom" constant="70" id="B0G-rk-n6z"/>
+                            <constraint firstItem="mx5-Xc-Slc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Ztw-d9-lL3"/>
                             <constraint firstItem="4JD-vR-CRd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2m-9o-tOk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4JD-vR-CRd" secondAttribute="bottom" constant="170" id="jsb-f5-G38"/>
                             <constraint firstItem="4JD-vR-CRd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="prb-cM-oTj"/>
+                            <constraint firstItem="mx5-Xc-Slc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rvh-be-xLI"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="116"/>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
