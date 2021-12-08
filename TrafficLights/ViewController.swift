@@ -15,13 +15,23 @@ class ViewController: UIViewController {
     @IBOutlet var trafficLightStakView: UIStackView!
     
     override func viewDidLoad() {
-        yellowColorView.layer.cornerRadius = yellowColorView.layer.bounds.width/2
-        redColorView.layer.cornerRadius = redColorView.layer.bounds.width/2
-        greenColorView.layer.cornerRadius = greenColorView.layer.bounds.width/2
-    }
-
-    @IBAction func pressedButton() {
+        
     }
     
-}
+    override func viewDidAppear(_ animated: Bool) {
+        yellowColorView.layer.cornerRadius = yellowColorView.layer.bounds.width / 2
+        redColorView.layer.cornerRadius = redColorView.layer.bounds.width / 2
+        greenColorView.layer.cornerRadius = greenColorView.layer.bounds.width / 2
+    }
+    
+    @IBAction func pressedButton() {
+        startButton.setTitle("NEXT", for: .normal)
+        redColorView.alpha = 1
+        
+        if yellowColorView.alpha != 1 {
+            redColorView.alpha = 0.3
+            yellowColorView.alpha = 1
+        }
+    }
 
+}

@@ -16,24 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-vR-CRd">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-vR-CRd">
                                 <rect key="frame" x="117.5" y="84" width="179" height="578"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSi-2f-uvd">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSi-2f-uvd">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="179.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SSi-2f-uvd" secondAttribute="height" multiplier="1:1" id="ASo-mT-HZU"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsI-3e-CbC">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsI-3e-CbC">
                                         <rect key="frame" x="0.0" y="199.5" width="179" height="179"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WsI-3e-CbC" secondAttribute="height" multiplier="1:1" id="wed-s2-1O4"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-gU-1wG">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-gU-1wG">
                                         <rect key="frame" x="0.0" y="398.5" width="179" height="179.5"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
