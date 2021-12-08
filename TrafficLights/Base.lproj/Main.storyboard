@@ -71,7 +71,6 @@
                         <outlet property="greenColorView" destination="lPE-gU-1wG" id="abd-CI-mLe"/>
                         <outlet property="redColorView" destination="SSi-2f-uvd" id="0PH-s2-gOJ"/>
                         <outlet property="startButton" destination="mx5-Xc-Slc" id="8qO-Bp-qW4"/>
-                        <outlet property="trafficLightStakView" destination="4JD-vR-CRd" id="53b-1W-X2L"/>
                         <outlet property="yellowColorView" destination="WsI-3e-CbC" id="RjP-Ug-a1J"/>
                     </connections>
                 </viewController>

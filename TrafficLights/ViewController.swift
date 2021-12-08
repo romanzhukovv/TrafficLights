@@ -12,7 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet var yellowColorView: UIView!
     @IBOutlet var greenColorView: UIView!
     @IBOutlet var startButton: UIButton!
-    @IBOutlet var trafficLightStakView: UIStackView!
+    
+    enum Colors {
+        case red
+        case yellow
+        case green
+    }
+    
+    var currentColor: Colors = .red
     
     override func viewDidLoad() {
         
@@ -24,14 +31,27 @@ class ViewController: UIViewController {
         greenColorView.layer.cornerRadius = greenColorView.layer.bounds.width / 2
     }
     
-    @IBAction func pressedButton() {
-        startButton.setTitle("NEXT", for: .normal)
-        redColorView.alpha = 1
-        
-        if yellowColorView.alpha != 1 {
-            redColorView.alpha = 0.3
+    func updateUI(color: Colors) {
+        switch color {
+        case .red:
+            redColorView.alpha = 1
+            currentColor = .yellow
+        case .yellow:
             yellowColorView.alpha = 1
+            currentColor = .green
+        case .green:
+            greenColorView.alpha = 1
+            currentColor = .red
         }
+    }
+    
+    @IBAction func pressedButton() {
+        redColorView.alpha = 0.3
+        yellowColorView.alpha = 0.3
+        greenColorView.alpha = 0.3
+        
+        startButton.setTitle("NEXT", for: .normal)
+        updateUI(color: currentColor)
     }
 
 }
